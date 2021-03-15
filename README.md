@@ -1,13 +1,12 @@
-# CoroutineRxJavaBenchmark
-Benchmark to see the difference in resource consumptions between Coroutines and RxJava. 
+Benchmarks to see the difference in resource consumption between Coroutines and RxJava. 
 
-# To Set up
-Add here web sites you want to load during benchmarks. I add about 80-100 items:  
+# To set up benchmarks
+In IOSources add web sites you want to load during benchmarks. I prefer to add about 80-100 items:  
 `<Add here websites you want to load>`
 
 # What benchmark does
 Now there is only one benchmark and it's related only with loading website main pages from the internet using OkHttp. The intention is to simulate interaction with api in real apps. There're several parameters:
-* IOSources.delayStep specifies how many millisecond we need to wait before starting with loading the next page. With a small value like 10ms we generate much more work to do simultaniously as new connections launch before the previous ones finish.
+* IOSources.delayStep specifies how many millisecond we need to wait before starting with loading the next page. With a small value like 10ms we generate much more work to do simultaneously as new connections launch before the previous ones finish.
 * In the constructors you can choose to run this benchmark on a Computation scheduler
 * For Coroutines you can enable or disable using suspended functions
 
