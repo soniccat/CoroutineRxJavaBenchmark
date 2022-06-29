@@ -2,19 +2,10 @@ package com.aglushkov.coroutinesrxjavabenchmark.benchmark
 
 import android.util.Log
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Single
-import io.reactivex.rxjava3.internal.schedulers.ComputationScheduler
 import io.reactivex.rxjava3.schedulers.Schedulers
-import kotlinx.coroutines.*
-import retrofit2.awaitResponse
-import java.lang.Runnable
-import java.net.URL
-import java.net.URLConnection
-import java.util.concurrent.ThreadLocalRandom
 import java.util.concurrent.TimeUnit
-import kotlin.random.Random.Default.nextLong
 
 class RxJavaBenchmark(
     private val monitor: SystemMonitor,

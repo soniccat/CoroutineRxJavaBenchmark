@@ -6,11 +6,12 @@ import java.util.concurrent.TimeUnit
 
 object IOSources {
     val sites = listOf(
-        <Add here websites you want to load>
-        "https://www.<name>.com"
+//        <Add here websites you want to load>
+        "https://www.ya.ru",
+        "https://www.google.com",
     )
 
-    private val timeout = 5
+    private val timeout = 5L
     val okHttpClient = OkHttpClient.Builder()
         .readTimeout(timeout, TimeUnit.SECONDS)
         .connectTimeout(timeout, TimeUnit.SECONDS)
